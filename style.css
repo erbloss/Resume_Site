@@ -1,0 +1,279 @@
+/* Color Theme Swatches in Hex */
+.personal_profile_site-1-hex { color: #96E0A4; }
+.personal_profile_site-2-hex { color: #c17187; }
+.personal_profile_site-3-hex { color: #813454; }
+.personal_profile_site-4-hex { color: #28184e; }
+.personal_profile_site-5-hex { color: #314e36; };
+.personal_profile_site-6-hex { color: #605f5f40; };
+
+.personal_profile_site-7-hex { color: #198754; } /* success green */
+
+/* background ------------------ */
+.gradient-background {
+  background: linear-gradient(300deg, #96E0A4, #c17187, #6eabc1);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* standard components ------------*/
+body {
+  
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+  font-size: 70px;
+  font-family: "petit formal script";
+  color: white;
+}
+
+h2 {
+    color: #813454;
+    font-size: 40px;
+    font-family: "petit formal script";
+}
+
+h3 {
+  padding: 1.5rem;
+  color: #28184e;
+}
+
+p {
+  color:#605f5f75;
+}
+
+
+/* Intro section -----------------*/
+.profile-img {
+  border-radius: 50%;
+}
+
+.intro-container p {
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Qualifications section ---------*/
+#myCarousel {
+  position: relative;
+  height: 700px;
+  padding-top: 40px;
+}
+
+.carousel-inner {
+  padding-bottom: 0px;
+  height:600px;
+  
+ }
+
+.carousel-item {
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.carousel-item li {
+  list-style: none;
+  font-size: 25px;
+  color:#813454;
+}
+
+.carousel-item  h3 {
+  font-size: 35px;
+}
+
+.carousel-item  h4{
+  font-size: 30px;
+  color:#813454;
+}
+
+.carousel-item  p {
+  font-size: 25px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #198754; 
+}
+
+.carousel-indicators .active {
+    background-color: #146c43; 
+}
+
+.resume-btn {
+  position: absolute;
+  bottom: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: bottom;
+}
+
+.resume-btn > a {
+  width: 20em;
+  height: 4em;
+  justify-content: center;
+  border:#96E0A4 solid 5px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+
+/* Project section --------------- */
+.project- {
+  background-color: #96e0a45f;
+}
+.project-row {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  text-align:center;
+  padding: 4rem;
+}
+
+.project-row p {
+  padding: 3rem 3rem;
+  color: black;
+}
+
+.project-row a {
+  background-color: #314e3699;
+}
+
+.project-section h2 {
+  text-align: right;
+}
+
+.project-section h3 {
+  color:white;
+}
+
+
+/* Cards */
+.card-body {
+  background-color: #19875494;
+}
+
+.card:hover {
+  border-color: #198754;
+}
+
+.card {
+  border:#96E0A4 solid 5px;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #605f5f40;
+}
+
+.card > svg {
+  padding: 20px;
+  fill:#81345450;
+  width: 100%;
+  height: 200px;
+  
+}
+.card-text {
+  color: white;
+}
+
+
+/* About section ----------------*/
+.about-context > p {
+  font-size: 23px;
+  font-style:italic;
+  color:black;
+  text-align: justify;
+}
+
+
+/* Contact section + footer ------*/
+.connect-section {
+  width:30%;
+  min-width:800px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-container{
+  height: 50px;
+  color: white;
+}
+
+
+/* Media Queries ----------------*/
+
+@media 
+(min-width:400px) and 
+(max-width: 991px) {
+
+  .project-row .col {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-section h2 {
+  text-align: center;
+  }
+
+  .resume-btn > a{
+    max-width: 200px;
+  }
+
+  h2 {
+    text-align: center
+  }
+
+  .intro-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-context > p {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+}
+
+@media 
+(max-width: 768px) {
+
+  .carousel-item {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .carousel-inner {
+    overflow: visible;
+  }
+  
+  .carousel-item h4{
+    font-size: 1.2rem;
+  }
+
+  .carousel-item p,
+  .carousel-item li {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .tool-list {
+    margin: 30px;
+  }
+}
