@@ -35,76 +35,78 @@ body {
 }
 
 h1{
-  font-size: 70px;
+  font-size: 50px;
   font-family: "petit formal script";
   color: white;
 }
 
 h2 {
     color: #813454;
-    font-size: 40px;
+    font-size: 35px;
     font-family: "petit formal script";
 }
 
 h3 {
-  padding: 1.5rem;
-  color: #28184e;
+  font-size: 26px;
+  color: #198754;
 }
 
 p {
-  color:#605f5f75;
+  color:#605f5fb1;
 }
 
 
 /* Intro section -----------------*/
 .profile-img {
   border-radius: 50%;
+  max-width: 350px;
 }
 
 .intro-container p {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
+}
+
+.intro-row {
+  img {
+    margin-left: 4rem;
+  }
 }
 
 /* Qualifications section ---------*/
 #myCarousel {
   position: relative;
-  height: 700px;
-  padding-top: 40px;
+  height: 500px;
+  padding-top: 25px;
 }
 
 .carousel-inner {
   padding-bottom: 0px;
-  height:600px;
-  
+  height:400px;
  }
 
 .carousel-item {
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  font-size: larger;
 }
 
 .carousel-item li {
   list-style: none;
-  font-size: 25px;
+  font-size: 18px;
   color:#813454;
 }
 
-.carousel-item  h3 {
-  font-size: 35px;
-}
-
 .carousel-item  h4{
-  font-size: 30px;
+  font-size: 22px;
   color:#813454;
 }
 
 .carousel-item  p {
-  font-size: 25px;
+  font-size: 18px;
 }
+
 
 .carousel-indicators [data-bs-target] {
     background-color: #198754; 
@@ -116,7 +118,7 @@ p {
 
 .resume-btn {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left:50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -124,116 +126,120 @@ p {
 }
 
 .resume-btn > a {
-  width: 20em;
-  height: 4em;
+  width: 15em;
+  height: 3em;
   justify-content: center;
-  border:#96E0A4 solid 5px;
+  border:#96E0A4 solid 3px;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 18px;
+  margin:40px;
 }
 
 
 /* Project section --------------- */
-.project- {
-  background-color: #96e0a45f;
+.project-section {
+  background-color: #58785e3e;
+  border-radius: 5vh;
+  margin-bottom: 20px;
 }
 .project-row {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: center; 
   text-align:center;
-  padding: 4rem;
 }
 
 .project-row p {
-  padding: 3rem 3rem;
-  color: black;
+  padding: 1rem 1rem;
 }
 
 .project-row a {
   background-color: #314e3699;
 }
 
-.project-section h2 {
-  text-align: right;
-}
-
 .project-section h3 {
-  color:white;
+  color: #813454;
+  padding: 0px;
+  padding-top: 20px;
 }
 
+.project-col {
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    border-bottom:#813454 solid 3px;
+  }
+  img:hover{
+    filter:opacity(80%);
+  }
+}
 
 /* Cards */
 .card-body {
-  background-color: #19875494;
-}
-
-.card:hover {
-  border-color: #198754;
+  background-color: white;
 }
 
 .card {
-  border:#96E0A4 solid 5px;
-  border-radius: 10px;
+  border: none;
   width: 90%;
+  max-width: 400px;
   background-color: #605f5f40;
 }
 
 .card > svg {
-  padding: 20px;
+  padding: 10px;
   fill:#81345450;
   width: 100%;
-  height: 200px;
-  
-}
-.card-text {
-  color: white;
+  height: 100px; 
 }
 
 
 /* About section ----------------*/
 .about-context > p {
-  font-size: 23px;
+  font-size: 18px;
   font-style:italic;
   color:black;
   text-align: justify;
 }
 
 
-/* Contact section + footer ------*/
-.connect-section {
-  width:30%;
-  min-width:800px;
+/* Contact-Footer section ------*/
+.connect-footer{
   justify-self: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 100px;
+  h4 {
+    font-size: 18px;
+    color: #813454;
+  }
+  small {
+    color: rgba(33, 10, 84, 0.447);
+  }
 }
 
-.footer-container{
-  height: 50px;
+.nav-item {
+  text-align: center;
+  h5, a {
   color: white;
+  }
 }
+
+
 
 
 /* Media Queries ----------------*/
 
-@media 
-(min-width:400px) and 
-(max-width: 991px) {
-
+@media
+(max-width: 992px) {
   .project-row .col {
     flex-direction: column;
     width: 100%;
+    max-width: 400px;
     justify-content: center;
     align-items: center;
-  }
-
-  .project-section h2 {
-  text-align: center;
-  }
-
-  .resume-btn > a{
-    max-width: 200px;
+    padding: 30px;
   }
 
   h2 {
@@ -245,35 +251,7 @@ p {
     text-align: center;
   }
 
-  .about-context > p {
-    font-size: 20px;
-    padding-left: 15px;
-  }
-}
-
-@media 
-(max-width: 768px) {
-
-  .carousel-item {
-    height: auto;
-    padding: 1rem;
-  }
-
   .carousel-inner {
-    overflow: visible;
-  }
-  
-  .carousel-item h4{
-    font-size: 1.2rem;
-  }
-
-  .carousel-item p,
-  .carousel-item li {
-    font-size: 1.2rem;
-    line-height: 1.4;
-  }
-
-  .tool-list {
-    margin: 30px;
+    scale:calc(.75);
   }
 }
