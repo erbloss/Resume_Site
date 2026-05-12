@@ -1,12 +1,37 @@
 /* Color Theme Swatches in Hex */
-.personal_profile_site-1-hex { color: #96E0A4; }
-.personal_profile_site-2-hex { color: #c17187; }
-.personal_profile_site-3-hex { color: #813454; }
-.personal_profile_site-4-hex { color: #28184e; }
-.personal_profile_site-5-hex { color: #314e36; };
-.personal_profile_site-6-hex { color: #605f5f40; };
+.personal_profile_site-1-hex {
+  color: #96E0A4;
+}
 
-.personal_profile_site-7-hex { color: #198754; } /* success green */
+.personal_profile_site-2-hex {
+  color: #c17187;
+}
+
+.personal_profile_site-3-hex {
+  color: #813454;
+}
+
+.personal_profile_site-4-hex {
+  color: #28184e;
+}
+
+.personal_profile_site-5-hex {
+  color: #314e36;
+}
+
+;
+
+.personal_profile_site-6-hex {
+  color: #605f5f40;
+}
+
+;
+
+.personal_profile_site-7-hex {
+  color: #198754;
+}
+
+/* success green */
 
 /* background ------------------ */
 .gradient-background {
@@ -19,9 +44,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -30,20 +57,20 @@
 
 /* standard components ------------*/
 body {
-  
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1{
+h1 {
   font-size: 50px;
   font-family: "petit formal script";
   color: white;
 }
 
 h2 {
-    color: #813454;
-    font-size: 35px;
-    font-family: "petit formal script";
+  color: #813454;
+  font-size: 35px;
+  font-family: "petit formal script";
 }
 
 h3 {
@@ -52,7 +79,7 @@ h3 {
 }
 
 p {
-  color:#605f5fb1;
+  color: #605f5fb1;
 }
 
 
@@ -83,8 +110,8 @@ p {
 
 .carousel-inner {
   padding-bottom: 0px;
-  height:400px;
- }
+  height: 400px;
+}
 
 .carousel-item {
   justify-content: center;
@@ -95,46 +122,45 @@ p {
 .carousel-item li {
   list-style: none;
   font-size: 18px;
-  color:#813454;
+  color: #813454;
 }
 
-.carousel-item  h4{
+.carousel-item h4 {
   font-size: 22px;
-  color:#813454;
+  color: #813454;
 }
 
-.carousel-item  p {
+.carousel-item p {
   font-size: 18px;
 }
 
 
 .carousel-indicators [data-bs-target] {
-    background-color: #198754; 
+  background-color: #198754;
 }
 
 .carousel-indicators .active {
-    background-color: #146c43; 
+  background-color: #146c43;
 }
 
 .resume-btn {
   position: absolute;
   bottom: 0px;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   text-align: bottom;
 }
 
-.resume-btn > a {
+.resume-btn>a {
   width: 15em;
   height: 3em;
   justify-content: center;
-  border:#96E0A4 solid 3px;
+  border: #96E0A4 solid 3px;
   border-radius: 10px;
   font-size: 18px;
-  margin:40px;
+  margin: 40px;
 }
-
 
 /* Project section --------------- */
 .project-section {
@@ -142,11 +168,12 @@ p {
   border-radius: 5vh;
   margin-bottom: 20px;
 }
+
 .project-row {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  text-align:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .project-row p {
@@ -166,12 +193,14 @@ p {
 .project-col {
   justify-content: center;
   align-items: center;
+
   img {
     width: 100%;
-    border-bottom:#813454 solid 3px;
+    border-bottom: #813454 solid 3px;
   }
-  img:hover{
-    filter:opacity(80%);
+
+  img:hover {
+    filter: opacity(80%);
   }
 }
 
@@ -187,33 +216,35 @@ p {
   background-color: #605f5f40;
 }
 
-.card > svg {
+.card>svg {
   padding: 10px;
-  fill:#81345450;
+  fill: #81345450;
   width: 100%;
-  height: 100px; 
+  height: 100px;
 }
 
 
 /* About section ----------------*/
-.about-context > p {
+.about-context>p {
   font-size: 18px;
-  font-style:italic;
-  color:black;
+  font-style: italic;
+  color: black;
   text-align: justify;
 }
 
 
 /* Contact-Footer section ------*/
-.connect-footer{
+.connect-footer {
   justify-self: center;
   align-items: center;
   text-align: center;
   padding-bottom: 100px;
+
   h4 {
     font-size: 18px;
     color: #813454;
   }
+
   small {
     color: rgba(33, 10, 84, 0.447);
   }
@@ -221,8 +252,10 @@ p {
 
 .nav-item {
   text-align: center;
-  h5, a {
-  color: white;
+
+  h5,
+  a {
+    color: white;
   }
 }
 
@@ -231,8 +264,7 @@ p {
 
 /* Media Queries ----------------*/
 
-@media
-(max-width: 992px) {
+@media (max-width: 992px) {
   .project-row .col {
     flex-direction: column;
     width: 100%;
@@ -252,6 +284,6 @@ p {
   }
 
   .carousel-inner {
-    scale:calc(.75);
+    scale: calc(.75);
   }
 }
